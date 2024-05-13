@@ -1,0 +1,199 @@
+/* ESTILOS DE MEDIA CUERI*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: deepskyblue;
+    border: 2px solid black;
+    margin: 50px;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.query{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns:  repeat(3, auto);
+    grid-auto-rows: repeat(3, 100px);
+    gap: 1em; 
+}
+
+.query div:hover {
+    border: 1px solid #000;
+}
+.caja{
+    background-color: beige;
+    border: 1px solid black;
+}
+
+
+
+.caja1{
+    background: red;
+    padding: 1em;
+    
+}
+.caja2{
+    background: blue;
+    padding: 1em;
+}
+.caja3{
+    background: green;
+    padding: 1em;
+}
+.caja4{
+    background: yellow;
+    padding: 1em;
+}
+.caja5{
+    background: orange;
+    padding: 1em;
+}
+.caja6{
+    background:violet;
+    padding: 1em;
+}
+.caja7{
+    background: gray;
+    padding: 1em;
+}
+.caja8{
+    background: brown;
+    padding: 1em;
+}
+.caja9{
+    background: coral;
+    padding: 1em;
+}
+
+@media all and (max-width: 320px){
+    .caja1{
+        background: red;
+        grid-column: 1/4;
+        padding: 1em;
+        
+    }
+    .caja2{
+        background: blue;
+        grid-column: 1/4;
+        padding: 1em;
+    }
+    .caja3{
+        background: green;
+        grid-column: 1/4;
+        padding: 1em;
+    }
+    .caja4{
+        background: yellow;
+        grid-column: 1/4;
+        padding: 1em;
+    }
+    .caja5{
+        background: orange;
+        grid-column: 1/4;
+        padding: 1em;
+    }
+    .caja6{
+        background:violet;
+        grid-column: 1/4;
+        padding: 1em;
+    }
+    .caja7{
+        background: gray;
+        grid-column: 1/4;
+        padding: 1em;
+    }
+    .caja8{
+        background: brown;
+        grid-column: 1/4;
+        padding: 1em;
+    }
+    .caja9{
+        background: coral;
+        grid-column: 1/4;
+        padding: 1em;
+    }
+    .cajas{
+        grid-template-rows: repeat(9, 100px) ;
+    }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .caja1{
+        background: red;
+        padding: 1em;
+        
+    }
+    .caja2{
+        background: blue;
+        padding: 1em;
+    }
+    .caja3{
+        background: green;
+        padding: 1em;
+    }
+    .caja4{
+        background: yellow;
+        padding: 1em;
+    }
+    .caja5{
+        background: orange;
+        padding: 1em;
+    }
+    .caja6{
+        background:violet;
+        padding: 1em;
+    }
+    .caja7{
+        background: gray;
+        padding: 1em;
+    }
+    .caja8{
+        background: brown;
+        padding: 1em;
+    }
+    .caja9{
+        background: coral;
+        padding: 1em;
+    }
+    .cajas {
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(5,100px);
+        gap: 10px;
+    }
+
+}
+
+/*
+.cajas9{
+    background-color: coral;
+    grid-column-start: 1;
+    grid-row-start: 9;
+    grid-column-end: 9;
+}
+ /*         
+ @media only screen and (min-width: 0px) and (max-width: 320px){
+    .query{
+        width: 100%;
+        padding-left: 23px;
+        flex-direction: column;
+    }
+    .cajas {
+        width: 100%;
+    }
+}
